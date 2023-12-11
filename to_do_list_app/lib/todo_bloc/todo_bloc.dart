@@ -57,55 +57,33 @@ class TodoBloc extends HydratedBloc<TodoEvent, TodoState> {
   }
 
   void _onRemoveTodo(
-    RemoveTodo event,
-    Emitter<TodoState> emit,
-  ) {
-    emit;{
-      state.copyWith(
-        status: TodoStatus.loading
-      );
-    }
-    try {
-      state.todos.remove(event.todo);
-      emit(
-        state.copyWith(
-          todos: state.todos,
-          status: TodoStatus.success
-        )
-      );
-    }catch(e){
-      emit(
-        state.copyWith(
-          status: TodoStatus.error
-        )
-      );
-    }
-  }
+  RemoveTodo event,
+  Emitter<TodoState> emit,
+) {
+  final newList = List<Todo>.from(state.todos)..remove(event.todo);
+  emit(
+    state.copyWith(
+      todos: newList,
+      status: TodoStatus.success
+    )
+  );
+}
 
   void _onAlterTodo(
     AlterTodo event,
     Emitter<TodoState> emit,
   ) {
-    emit;{
-      state.copyWith(
-        status: TodoStatus.loading
-      );
-    }
-    try {
-      state.todos[event.index].isDone = !state.todos[event.index].isDone;
-      emit(
+    List<Todo> updatedTodos = List<Todo>.from(state.todos);
+    
+     updatedTodos[event.index] = updatedTodos[event.index].copyWith(
+    isDone: !updatedTodos[event.index].isDone
+  );
+     emit(
         state.copyWith(
-          todos: state.todos,
+          todos: updatedTodos,
           status: TodoStatus.success
         )
       );
-    }catch(e){
-      emit(
-        state.copyWith(
-          status: TodoStatus.error
-        )
-      );
-    }
   }
   
   @override

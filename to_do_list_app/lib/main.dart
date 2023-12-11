@@ -25,8 +25,8 @@ class MainApp extends StatelessWidget {
         colorScheme: const ColorScheme.light(
           background: Colors.white,
           onBackground: Colors.black,
-          primary: Colors.yellowAccent,
-          onPrimary: Colors.black,
+          primary: Colors.blue,
+          onPrimary: Colors.white,
           secondary: Colors.lightGreen,
           onSecondary: Colors.white
         ),

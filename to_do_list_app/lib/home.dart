@@ -164,7 +164,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       borderRadius: BorderRadius.circular(10),
                     ),
                     child: Slidable(
-                      key: const ValueKey(0),
+                      key: ValueKey(i),
                       startActionPane: ActionPane(
                         motion: const ScrollMotion(),
                         children: [
