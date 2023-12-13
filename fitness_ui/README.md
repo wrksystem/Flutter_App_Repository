@@ -1,16 +1,7 @@
-# fitness_ui
+# BREAKFAST UI APP
 
-A new Flutter project.
+Usando a biblioteca SvgPicture, criei essa UI de estudo para melhorar o desenvolvimento de tela utilizando widget de renderização a partir de um ativo SVG, que é um formato de imagem baseado em XML que descreve gráficos vetoriais bidimensionais. Essa forma de construção e integração dentro do Flutter permite criar interfaces de usuário responsivas e escaláveis
 
-## Getting Started
+# SCREENSHOTS
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![image](https://github.com/wrksystem/Flutter_App_Repository/assets/51803873/d87c2a11-ddeb-493c-9ac2-545c4144ad32)
