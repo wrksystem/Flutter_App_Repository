@@ -1,16 +1,7 @@
-# api_widget_app
+# RECEBER DADOS DE API POR HTTP
 
-A new Flutter project.
+Aplicativo de estudo onde puder praticar desenvolvimento de Apps com Flutter, fazendo requisições http de API utilizando a biblioteca HttpClient, e ainda utilizando classes abstratas para poder evitar a super depeência de bibliotecas de terceiros.
 
-## Getting Started
+# SCREENSHOTS
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![image](https://github.com/wrksystem/Flutter_App_Repository/assets/51803873/d2000597-4ff7-41e7-af27-75ccb8b3acb7)
